@@ -5,6 +5,14 @@
     line-height:1;
 }
 
+p {
+    margin:0;
+}
+
+ul {
+    list-style:none;
+}
+
 .col-xs-12, .col-xs-11, .col-xs-10,
 .col-xs-9, .col-xs-8, .col-xs-7,
 .col-xs-6, .col-xs-5, .col-xs-4,
@@ -134,6 +142,39 @@ div.findHouse > a.findButton {
     cursor:pointer;
 }
 
+div.findHouse > div.dropDown > p {
+    text-align:center;
+    padding:7px 0;
+    color:#5F5F5F
+}
+
+div.findHouse > div.dropDown > div > ul {
+    display:none;
+    position:absolute;
+    margin-left:-2px;
+    margin-top:-30px;
+    width:204px;
+    border-style:solid;
+    border-color:#FF876B;
+    border-width:2px;
+    cursor:pointer;
+}
+
+div.findHouse > div.dropDown:hover > div > ul {
+    display:block;
+}
+
+div.findHouse > div.dropDown > div > ul > li {
+    padding:7px 0;
+    height:32px;
+    text-align:center;
+    background-color:#FFFFFF;
+    color:#5F5F5F;
+}
+
+div.findHouse > div.dropDown > div > ul > li:hover {
+    background-color:#AAAAAA;
+}
 div.findHouse > a.findButton,
 div.findHouse > a.findButton:hover,
 div.findHouse > a.findButton:focus,
