@@ -111,6 +111,14 @@ div.bottomNavbar > div.menuPart > ul > li {
 section {
     float:left;
     width:100%;
+    min-height:100%;
+    margin-bottom:-130px;
+}
+
+section:after {
+  content: "";
+  display: block;
+  height:130px;
 }
 
 div.fullImage {
