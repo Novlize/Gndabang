@@ -5,6 +5,10 @@
     line-height:1;
 }
 
+body {
+    float:left;
+}
+
 p {
     margin:0;
 }
@@ -36,6 +40,7 @@ header {
     float:left;
     width:100%;
     height:85px;
+    display:block;
 }
 
 nav ul {
@@ -111,32 +116,30 @@ div.bottomNavbar > div.menuPart > ul > li {
 section {
     float:left;
     width:100%;
-    min-height:100%;
-    margin-bottom:-130px;
 }
 
-section:after {
-  content: "";
-  display: block;
-  height:130px;
+#mainImageSlide {
+    margin-top:-85px;
 }
-
 div.fullImage {
-    height:560px;
+    height:645px;
     width:100%;
 }
 
 div.fullImage > img.floatImage1 {
-    margin-top:147.5px;
+    margin-top:232.5px;
 }
 
 div.findHouse {
-    float:left;
-    margin-top:33px;
+    display:inline-flex;
+    width:1280px;
+    background-color:#EFEFEF;
+    padding:25px 226px;
 }
 
 div.findHouse > div {
     margin-right:4px;
+    background-color:#FFFFFF;
 }
 
 div.findHouse > div,
@@ -153,7 +156,7 @@ div.findHouse > a.findButton {
 div.findHouse > div.dropDown > p {
     text-align:center;
     padding:7px 0;
-    color:#5F5F5F
+    color:#5F5F5F;
 }
 
 div.findHouse > div.dropDown > div.dropDownData {
@@ -181,6 +184,10 @@ div.findHouse > div.dropDown > div.dropDownData > ul > li {
 
 div.findHouse > div.dropDown > div.dropDownData > ul > li:hover {
     background-color:#AAAAAA;
+}
+
+div.dropDown > div.dropDownData > ul > li.selectedItem {
+    background-color:#AAAAAA !important;
 }
 
 div.findHouse > a.findButton,

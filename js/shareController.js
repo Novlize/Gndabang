@@ -32,6 +32,8 @@ $(document).ready(function() {
 			$menu.find('> ul > li').each(function (e) {
 				var $data = $(this).html();
 				$(this).click(function (e) {
+					$(this).parent().find('>li.selectedItem').removeAttr('class');
+					$(this).addClass("selectedItem");
 					$value.html($data);
 					hide_dropdown();
 				});
@@ -40,7 +42,7 @@ $(document).ready(function() {
 	});
 	$(document).click(function (e) {
 		//check if the clicked area is dropDown or not
-		if ($(".dropDown").has(e.target).length == 0) {
+		if ($('.dropDown').has(e.target).length == 0) {
 			hide_dropdown();
 		}
 	});
